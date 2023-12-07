@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Private Village Event Reservation</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <script src="js/script.js"></script>
+
+
+</head>
+
+<body class="sub_page">
+  <style>
+    body {
+      background-image: url('images/about-img2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/PVHSMS.png" alt="">
+            </a>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="project.html">Project</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="testimonial.html">Reservation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="download.html"> Download App</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="logoutBtn" >Logout</a>
+                </li>
+                <script>
+                  document.getElementById("logoutBtn").addEventListener("click", () => {
+                      window.location.href = "loginform.html";
+                  });
+                </script>
+                <form class="form-inline">
+                  
+                  </button>
+                </form>
+              </ul>
+              <div class="quote_btn-container">
+                <a href="" class="quote_btn">
+                  Get A Quote
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- client section -->
+  <div id="reservation-form">
+    <p>Private Village Event Reservation</p>
+    <form id="event-reservation-form" action="/submit" method="POST">
+      <label for="name">RFID Number:</label>
+      <input type="number" id="rfid" name="number" required>
+  
+      <label for="name">Name:</label>
+      <input type="name" id="name" name="name" required>
+  
+      <label for="residency">Residency Status:</label>
+      <select id="residency" name="residency" required>
+        <option value="-">-</option>
+        <option value="resident">Resident</option>
+        <option value="non-resident">Non-Resident</option>
+      </select>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="event">Event:</label>
+      <select id="event" name="event" required>
+        <option value="-">-</option>
+        <option value="wedding">Wedding</option>
+        <option value="birthday">Birthday Party</option>
+        <option value="corporate">Corporate Event</option>
+        <option value="basketball">Basketball</option>
+        <option value="other">Other</option>
+      </select> 
+  
+      <label for="number">Days of Event:</label>
+      <input type="number" id="days-of-event" name="days-of-event" min="1" required>
+  
+      <div id="date-number">
+        <div id="one-day" class="date-options">
+          <label for="one-date">Date:</label>
+          <input type="date" id="one-date" name="one-date">
+          <div id="one-day-date">
+            <label for="time-from">Time Start:</label>
+            <input type="time" id="time-from-one" name="time-from">
+            <label for="time-to">Time End:</label>
+            <input type="time" id="time-to-one" name="time-to">
+          </div>
+        </div>
+  
+        <div id="select-date" class="date-options">
+          <label for="date-from">Date Start:</label>
+          <input type="date" id="date-from" name="date-from">
+          <label for="time-from">Time Start:</label>
+          <input type="time" id="time-from" name="time-from">
+             
+          <label for="date-to">Date End:</label>
+          <input type="date" id="date-to" name="date-to">         
+          <label for="time-to">Time End:</label>
+          <input type="time" id="time-to" name="time-to">
+        </div>
+      </div>
+  
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" required>
+    
+      <script>
+        // Get the elements you want to show/hide
+        const oneDayDiv = document.getElementById("one-day");
+        const selectDateDiv = document.getElementById("select-date");
+        const daysOfEventInput = document.getElementById("days-of-event");
+        const dateNumber = document.getElementById("date-number");
+        const oneDaydate = document.getElementById("one-day-date");
+    
+        // Hide the date-number initially
+        dateNumber.style.display = "none";
+    
+        // Add an event listener to the days-of-event input
+        daysOfEventInput.addEventListener("input", function () {
+            const daysValue = parseInt(daysOfEventInput.value);
+    
+            if (daysValue === 1) {
+                oneDayDiv.style.display = "block";
+                selectDateDiv.style.display = "none";
+                dateNumber.style.display = "block"; // Show the parent container
+            } else if (daysValue >= 2 && daysValue <= 30) {
+                oneDayDiv.style.display = "none";
+                selectDateDiv.style.display = "block";
+                dateNumber.style.display = "block"; // Show the parent container
+                oneDaydate.style.display = "block";
+            } else {
+                oneDayDiv.style.display = "none";
+                selectDateDiv.style.display = "none";
+                dateNumber.style.display = "none";
+            }
+          
+        });
+        // Format time inputs as "8:00 AM" when they lose focus (blur event)
+      const timeInputs = document.querySelectorAll('input[type="text"]');
+      timeInputs.forEach(input => {
+          input.addEventListener('blur', () => {
+              const value = input.value;
+              const timeRegex = /^(1[0-2]|0?[1-9]):[0-5][0-9] (AM|PM)$/;
+              
+              if (!timeRegex.test(value)) {
+                  // Invalid input, reset to placeholder
+                  input.value = '';
+              }
+          });
+      });
+      </script>
+      <button type="submit" class="custom-button">Submit</button>
+      <script>
+      //  document.addEventListener("DOMContentLoaded", function () {
+      //     // Get the form element
+      //     var form = document.getElementById("event-reservation-form");
+
+      //     // Add a submit event listener to the form
+      //     form.addEventListener("submit", function (event) {
+      //       // Prevent the default form submission
+      //       event.preventDefault();
+
+      //       // Serialize form data into JSON
+      //       var formData = {
+      //         name: form.querySelector("#name").value,
+      //         residency: form.querySelector("#residency").value,
+      //         email: form.querySelector("#email").value,
+      //         event: form.querySelector("#event").value,
+      //         guests: parseInt(form.querySelector("#guests").value),
+      //         daysOfEvent: parseInt(form.querySelector("#days-of-event").value),
+      //         oneDate: form.querySelector("#one-date").value || null,
+      //         timeFromOne: form.querySelector("#time-from-one").value || null,
+      //         timeToOne: form.querySelector("#time-to-one").value || null,
+      //         dateFrom: form.querySelector("#date-from").value || null,
+      //         timeFrom: form.querySelector("#time-from").value || null,
+      //         dateTo: form.querySelector("#date-to").value || null,
+      //         timeTo: form.querySelector("#time-to").value || null
+      //       };
+
+      //       // Send the form data to the server using the fetch API
+      //       fetch("/submit", {
+      //         method: "POST",
+      //         headers: {
+      //           "Content-Type": "application/json",
+      //         },
+      //         body: JSON.stringify(formData),
+      //       })
+      //         .then((response) => response.text())
+      //         .then((data) => {
+      //           if (data === "Reservation with the same date already exists") {
+      //             // Display an alert if a reservation with the same date exists
+      //             alert("A reservation with the same date already exists. Please choose a different date.");
+      //           } else if (data === "Submitted successfully") {
+      //             // Show an alert message on success
+      //             alert("Thank you for submitting your event reservation form! We have received your request and will be in touch soon to confirm your reservation. In the meantime, please feel free to contact us if you have any questions or need anything at all. We look forward to helping you create a memorable event at our village!");
+      //             // You can optionally reset the form after a successful submission
+      //             form.reset();
+      //           } else {
+      //             // Handle other possible responses from the server
+      //             console.error("Server response:", data);
+      //             alert("An error occurred while submitting the reservation.");
+      //           }
+      //         })
+      //         .catch((error) => {
+      //           console.error("Error:", error);
+      //           alert("An error occurred while submitting the reservation.");
+      //         });
+      //     });
+      //     var oneDateInput = form.querySelector("#one-date");
+      //   var enteredDate = oneDateInput.value;
+
+      //   if (isValidDate(enteredDate)) {
+      //     // Format the date and assign it to formData
+      //     formData.oneDate = formatDate(enteredDate);
+      //   } else {
+      //     // Handle the case when the date is not in a valid format
+      //     console.error("Invalid date format: " + enteredDate);
+      //   }
+
+      //   // Function to validate the date format
+      //   function isValidDate(dateString) {
+      //     // Regular expression to match yyyy-mm-dd format
+      //     var dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+      //     return dateRegex.test(dateString);
+      //   }
+
+      //   // Helper function to format the date
+      //   function formatDate(inputDate) {
+      //     const dateObj = new Date(inputDate);
+      //     const year = dateObj.getFullYear();
+      //     const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+      //     const day = String(dateObj.getDate()).padStart(2, '0');
+      //     return `${month}-${day}-${year}`;
+      //   }
+
+      //   });
+      </script>      
+    </form> 
+  </div> 
+  
+  
+  
+  <!-- info section -->
+  <section class="info_section ">
+
+    <div class="container">
+      <div class="contact_nav">
+        <a href="">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Call : +639059568972
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>
+            Email : privatevillage@gmail.com
+          </span>
+        </a>
+        <a href="https://www.google.com/maps/place/Monte+Brisa+Subd.,+Rodriguez,+Rizal/@14.7289818,121.1350378,17z/data=!4m15!1m8!3m7!1s0x3397bb170e335527:0x32a46ff1724e23d3!2sMonte+Brisa+Subd.,+Rodriguez,+Rizal!3b1!8m2!3d14.7289766!4d121.1376127!16s%2Fg%2F1vgwz8fn!3m5!1s0x3397bb170e335527:0x32a46ff1724e23d3!8m2!3d14.7289766!4d121.1376127!16s%2Fg%2F1vgwz8fn?entry=ttu">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span>
+            Location
+          </span>
+        </a>
+      </div>
+
+      <div class="info_top ">
+        <div class="row info_main_row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_links">
+              <h4>
+                QUICK LINKS
+              </h4>
+              <div class="info_links_menu">
+                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="about.html"> About</a>
+                <a class="" href="project.html">Project</a>
+                <a class="" href="testimonial.html">Reservation</a>
+                <a class="" href="contact.html">Contact Us</a>
+                <a class="" href="download.html">Download App</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="info_post">
+              <h5>
+                
+              </h5>
+              <div class="#">
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info_form">
+              
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info_bottom">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="info_logo">
+              <a href="">
+                <img src="images/PVHSMS.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="#">BSIT Group 2 Developers</a>
+      </p>
+    </div>
+  </section>  
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html> 

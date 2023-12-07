@@ -1,0 +1,45 @@
+/* The following styles will be applied to the "custom-dev" content */
+
+.custom-dev {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.custom-dev p {
+  margin-bottom: 10px;
+}
+
+.custom-dev ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.custom-dev li {
+  margin-bottom: 5px;
+}
+
+.custom-dev .download-button {
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #f07b26;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.custom-dev .download-button:hover {
+  background-color: #bc570d;
+}

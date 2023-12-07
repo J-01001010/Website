@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Private Village</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link href="css/dlstyle.css" rel="stylesheet"/>
+ 
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/PVHSMS.png" alt="">
+            </a>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="project.html">Project</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="testimonial.html">Reservation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="download.html"> Download App</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="logoutBtn" >Logout</a>
+                </li>
+                <form class="form-inline">
+                <script>
+                  document.getElementById("logoutBtn").addEventListener("click", () => {
+                      window.location.href = "loginform.html";
+                  });
+                </script>
+                   
+                </form>
+              </ul>
+              <div class="quote_btn-container">
+                <a href="" class="quote_btn">
+                  Get A Quote
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+  <section class="custom-dev">
+    <main>
+      <p>
+        This app allows you to generate QR codes for your visitors, making it easy for them to access information quickly. The generated QR codes can be scanned by the security personel to get more details or perform specific actions.
+      </p>
+      <p>
+        Benefits of using our app:
+      </p>
+      <ul>
+        <li>Quick response from administrators.</li>
+        <li>Effortless access to information through QR codes.</li>
+        <li>Enhanced user experience for your visitors.</li>
+      </ul>
+      <p>
+        Click the button below to download the app and start generating QR codes now!
+      </p>
+      <a class="download-button" href="https://drive.google.com/drive/folders/1K3YUijnDhLqmn6MxzJUlKwOR9qSLRFZn?usp=drive_link">Download App</a>
+      <script>
+        // // Get the Download App button element
+        // const downloadButton = document.querySelector('.download-button');
+
+        // // Add a click event listener to the button
+        // downloadButton.addEventListener('click', function(event) {
+        //   // Prevent the default behavior of the link
+        //   event.preventDefault();
+
+        //   // Display a message to the user
+        //   alert("The application that you want to download is under development. Please wait for another time to download the app.");
+        // });
+
+      </script>
+    </main>
+  </section>
+  <style>
+    /* The following styles will be applied to the "custom-dev" content */
+
+.custom-dev {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.custom-dev p {
+  margin-bottom: 10px;
+}
+
+.custom-dev ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.custom-dev li {
+  margin-bottom: 5px;
+}
+
+.custom-dev .download-button {
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #f07b26;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.custom-dev .download-button:hover {
+  background-color: #bc570d;
+}
+
+  </style>
+
+  <!-- end about section -->
+
+  <!-- info section -->
+  <section class="info_section">
+    <div class="container">
+      <div class="contact_nav">
+        <a href="">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Call : +639059568972
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>
+            Email : privatevillage@gmail.com
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span>
+            Location
+          </span>
+        </a>
+      </div>
+
+      <div class="info_top ">
+        <div class="row info_main_row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_links">
+              <h4>
+                QUICK LINKS
+              </h4>
+              <div class="info_links_menu">
+                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="about.html"> About</a>
+                <a class="" href="project.html">Project</a>
+                <a class="" href="testimonial.html">Testimonial</a>
+                <a class="" href="contact.html">Contact Us</a>
+                <a class="" href="download.html">Download App</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="info_post">
+              <h5>
+                
+              </h5>
+              <div class="#">
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="#" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info_form">
+              
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info_bottom">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="info_logo">
+              <a href="">
+                <img src="images/PVHSMS.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="#">BSIT Developers</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
